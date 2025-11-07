@@ -50,12 +50,9 @@ print("Residence area:", residence)
 #Task 5.Python program that takes a user input string and prints it in reverse order.
 #Foydalanuvchidan yozuv so'rab uni teskari tartibda yozuvchu python code.
 
-txt = "I'm John. I am from London"
+string = input("Enter random string:").strip()
 
-parts = txt.split("from")
-residence = parts[1].strip()
-
-print("Residence area:", residence)
+print("Reversed string:",string[::-1])
 
 #Task 6.Python program that counts the number of vowels in a given string.
 #Berilgan yozuvdagi unli harflarni sanovchi python code.
@@ -103,7 +100,7 @@ import string
 length = int(input("Enter length of password: "))
 
 characters = string.ascii_letters + string.digits + string.punctuation
-password = ''.join(random.choice(characters) for p in range(length))
+password = ''.join(random.choice(characters) for _ in range(length))
 
 print("Your password:", password)
 
